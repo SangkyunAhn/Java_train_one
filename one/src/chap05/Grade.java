@@ -7,8 +7,10 @@ public class Grade {
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 		int point = sc.nextInt();
+		int grade = point / 10;
 		
-		switch (point / 10) {
+		switch (grade) {
+			case 10:
 			case 9:
 				System.out.println("A"); break;
 			case 8:
@@ -20,6 +22,8 @@ public class Grade {
 			default:
 				System.out.println("F"); break;
 		}
+		
+		sc.close();
 	}
 
 }
